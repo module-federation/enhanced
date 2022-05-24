@@ -1,0 +1,23 @@
+{
+  "name": "@module-federation/ModuleFederationEnhacedPlugin",
+  "version": "1.0.0",
+  "main": "ModuleFederationEnhacedPlugin.js",
+  "license": "MIT",
+  "scripts": {
+    "prettier": "prettier --write \"**/*.{js,json,md,ts,tsx}\""
+  },
+  "peerDependencies": {
+    "webpack": "^5.0.0-beta.16"
+  },
+  "devDependencies": {
+    "prettier": "^2.6.2",
+    "webpack": "^5.72.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".../ModuleFederationEnhacedPlugin.git"
+  },
+  "dependencies": {
+    "find-package-json": "^1.0.0"
+  }
+}
