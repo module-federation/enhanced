@@ -1,7 +1,7 @@
 {
-  "name": "@module-federation/ModuleFederationEnhacedPlugin",
+  "name": "@module-federation/ModuleFederationEnhancedPlugin",
   "version": "1.0.0",
-  "main": "ModuleFederationEnhacedPlugin.js",
+  "main": "ModuleFederationEnhancedPlugin.js",
   "license": "MIT",
   "scripts": {
     "prettier": "prettier --write \"**/*.{js,json,md,ts,tsx}\""
@@ -15,7 +15,7 @@
   },
   "repository": {
     "type": "git",
-    "url": ".../ModuleFederationEnhacedPlugin.git"
+    "url": ".../ModuleFederationEnhancedPlugin.git"
   },
   "dependencies": {
     "find-package-json": "^1.0.0"
