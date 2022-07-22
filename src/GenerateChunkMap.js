@@ -21,4 +21,4 @@ const GenerateChunkMap = (compiler) => {
   );
 };
 
-module.exports = { GenerateChunkMap };
+module.exports = GenerateChunkMap;
