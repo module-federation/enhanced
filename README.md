@@ -79,12 +79,12 @@ onBeforeGet is basically middleware but for the module import itself instead of 
 #### Usage
 
 ```js
-const ModuleFederationEnhacedPlugin = require("@module-federation/ModuleFederationEnhacedPlugin");
+const ModuleFederationEnhancedPlugin = require("@module-federation/ModuleFederationEnhancedPlugin");
 
 module.export = {
   //... rest of your config
   plugins: [
-    new ModuleFederationEnhacedPlugin({
+    new ModuleFederationEnhancedPlugin({
       name: "myApp",
       library: { type: "var", name: "app2" },
       filename: "remoteEntry.js",

@@ -6,7 +6,7 @@ const GenerateModuleMap = require("./src/GenerateModuleMap");
 const GenerateRemoteMap = require("./src/GenerateRemoteMap");
 const GenerateRemoteUrlMap = require("./src/GenerateRemoteUrlMap");
 
-class ExtendedModuleFederationPlugin extends ModuleFederationPlugin {
+class ModuleFederationEnhancedPlugin extends ModuleFederationPlugin {
   constructor(options) {
     if (!options.exposes) {
       options.exposes = {};
@@ -27,4 +27,4 @@ class ExtendedModuleFederationPlugin extends ModuleFederationPlugin {
     GenerateChunkMap(compiler);
   }
 }
-module.exports = ExtendedModuleFederationPlugin;
+module.exports = ModuleFederationEnhancedPlugin;
