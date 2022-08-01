@@ -5,6 +5,8 @@ const GenerateChunkMap = require("./src/GenerateChunkMap");
 const GenerateModuleMap = require("./src/GenerateModuleMap");
 const GenerateRemoteMap = require("./src/GenerateRemoteMap");
 const GenerateRemoteUrlMap = require("./src/GenerateRemoteUrlMap");
+const AddRuntimeRequirementsToExternal = require("./src/AddRuntimeRequirementsToExternal");
+
 
 class ExtendedModuleFederationPlugin extends ModuleFederationPlugin {
   constructor(options) {
@@ -25,6 +27,7 @@ class ExtendedModuleFederationPlugin extends ModuleFederationPlugin {
   apply(compiler) {
     super.apply(compiler);
     GenerateChunkMap(compiler);
+    new AddRuntimeRequirementsToExternal().apply(compiler)
   }
 }
 module.exports = ExtendedModuleFederationPlugin;
